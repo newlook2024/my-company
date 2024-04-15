@@ -31,49 +31,6 @@ $(function () {
         },
     });
 
-    var swiperVideo = new Swiper(".swiper-video", {
-        effect: "coverflow",
-        initialSlide: 1,
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 2,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 500,
-            modifier: 1,
-            slideShadows: true
-        },
-        breakpoints: {
-            // when window width is >= 360px
-            360: {
-                slidesPerView: 1,
-                effect: "coverflow",
-                coverflowEffect: {
-                    scale: 1,
-                    modifier: 2,
-                    depth: 200,
-                }
-            },
-            // when window width is >= 768px
-            768: {
-                slidesPerView: 1,
-                effect: "coverflow",
-                coverflowEffect: {
-                    scale: 1,
-                    modifier: 2,
-                    depth: 200,
-                }
-            },
-            // when window width is >= 1024px
-            1024: {
-                slidesPerView: 2,
-            }
-        },
-        pagination: {
-            el: ".swiper-pagination"
-        }
-    });
 
     var swiperImage = new Swiper('.swiper-image', {
         autoplay: {
@@ -112,3 +69,4 @@ $(function () {
     });
 
 });
+

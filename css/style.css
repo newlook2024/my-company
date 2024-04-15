@@ -226,7 +226,7 @@ a {
     filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 
-.maps:hover{
+.maps:hover {
     filter: none;
 }
 
@@ -611,6 +611,7 @@ a {
     background-size: cover;
     background-position: center;
     position: relative;
+    width: 100%;
 }
 
 .video-iframe {
@@ -891,6 +892,22 @@ a {
     background-color: var(--accent-color);
 }
 
+.btn-box-prev{
+    display: flex;
+}
+
+.left-btn, .right-btn{
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+}
+
+.swiper-video{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width:993px) {
     h1 {
         font-size: 48px;
@@ -953,5 +970,15 @@ a {
 
     .nav-link {
         padding-block: 0.2rem;
+    }
+
+    .video-container{
+        width: 100%;
+    }
+
+    .swiper-video{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
